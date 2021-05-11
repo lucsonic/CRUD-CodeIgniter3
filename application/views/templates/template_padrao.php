@@ -44,7 +44,7 @@
 
 <body>
     <?php include 'header.php'; ?>
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding-top: 75px; padding-bottom: 75px;">
         <?php
         if ($this->session->flashdata('error')) {
         ?>

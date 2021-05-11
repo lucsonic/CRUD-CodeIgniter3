@@ -5,7 +5,7 @@
 </script>
 
 <body>
-	<div class='container-fluid' style="margin-bottom: 50px;">
+	<div class='container-fluid'>
 		<div style="float: left; padding-top: 15px;">
 			<button type="button" class="btn btn-success" onclick="window.location = 'criar'">Novo cliente</button>
 		</div>

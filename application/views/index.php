@@ -7,7 +7,9 @@
 <body>
 	<div class='container-fluid'>
 		<div style="float: left; padding-top: 15px;">
-			<button type="button" class="btn btn-success" onclick="window.location = 'criar'">Novo cliente</button>
+			<a href="<?= base_url() ?>index.php/Controller/criar">
+				<span type="button" class="btn btn-success">Novo cliente</span>
+			</a>
 		</div>
 		<div class="text-center" style="margin-top: 10px;">
 			<h3>Clientes cadastrados</h3>
@@ -45,18 +47,18 @@
 									<?= $cliente['telefones']; ?>
 								</td>
 								<td style="text-align: center; vertical-align: middle;">
-									<span class="btn btn-sm btn-primary" Onclick="window.location = 'editar?id=<?php echo $cliente['idcliente']; ?>'">
-										Editar</span>
-									</span>
+									<a href="<?= base_url() ?>index.php/Controller/editar?id=<?php echo $cliente['idcliente']; ?>">
+										<span class="btn btn-sm btn-primary">Editar</span>
+									</a>
 								</td>
 								<td style="text-align: center; vertical-align: middle;">
 									<span class="btn btn-sm btn-danger" Onclick="if (confirm('Deseja realmente excluir este cliente?'))window.location = 'excluir?id=<?php echo $cliente['idcliente']; ?>'">
 										Excluir</span>
 								</td>
 								<td style="text-align: center; vertical-align: middle;">
-									<span class="btn btn-sm btn-warning" Onclick="window.location = 'visualizar?id=<?php echo $cliente['idcliente']; ?>'">
-										Visualizar</span>
-									</span>
+									<a href="<?= base_url() ?>index.php/Controller/visualizar?id=<?php echo $cliente['idcliente']; ?>">
+										<span class="btn btn-sm btn-warning">Visualizar</span>
+									</a>
 								</td>
 							</tr>
 						<?php
